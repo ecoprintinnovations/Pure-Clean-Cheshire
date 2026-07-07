@@ -1,0 +1,35 @@
+{
+  "name": "frodsham-bespoke-cleaning",
+  "version": "1.0.0",
+  "description": "Pure Clean Cheshire - Professional Deep Cleaning Services Website",
+  "private": true,
+  "scripts": {
+    "dev": "npx serve -l 8080",
+    "build": "npm run build:html && npm run build:css && npm run build:js && npm run build:copy",
+    "build:html": "node scripts/build-html.js",
+    "build:css": "npx cleancss -o dist/css/main.min.css css/main.css",
+    "build:js": "npx terser js/main.js --compress --mangle --output dist/js/main.min.js",
+    "build:copy": "node scripts/copy-assets.js",
+    "postbuild": "node scripts/generate-sitemap.js",
+    "preview": "npx serve dist -l 8080",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "keywords": [
+    "cleaning",
+    "frodsham",
+    "cheshire",
+    "website",
+    "static-site"
+  ],
+  "author": "Pure Clean Cheshire",
+  "license": "MIT",
+  "devDependencies": {
+    "clean-css-cli": "^5.6.3",
+    "lightningcss": "^1.32.0",
+    "serve": "^14.2.0",
+    "terser": "^5.31.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "name": "Pure Clean Cheshire",
+  "short_name": "Frodsham Cleaning",
+  "description": "Professional deep cleaning services in Frodsham, Cheshire. End of tenancy, Airbnb turnovers, one-off deep cleans.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#2D2D2D",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en-GB",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "images/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "lifestyle", "productivity"],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "Get a Quote",
+      "short_name": "Quote",
+      "description": "Request a free cleaning quote",
+      "url": "/contact.html",
+      "icons": [{ "src": "images/favicon.svg", "sizes": "96x96" }]
+    },
+    {
+      "name": "Call Us",
+      "short_name": "Call",
+      "description": "Call Pure Clean Cheshire",
+      "url": "tel:+441928XXXXXXX",
+      "icons": [{ "src": "images/favicon.svg", "sizes": "96x96" }]
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false
+}

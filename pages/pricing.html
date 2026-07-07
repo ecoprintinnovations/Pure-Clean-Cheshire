@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/main.min.css">
     <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
 </head>
 <body>
@@ -19,10 +19,10 @@
         <div class="container header-inner">
             <a href="/index.html" class="logo" aria-label="Pure Clean Cheshire - Home">
                 <picture>
-                    <source srcset="../images/logo-48.webp" media="(max-width: 480px)">
-                    <source srcset="../images/logo-96.webp" media="(max-width: 768px)">
-                    <source srcset="../images/logo-144.webp" media="(max-width: 1024px)">
-                    <img class="logo-icon" src="../images/logo-web.webp" alt="" aria-hidden="true" width="48" height="48" loading="lazy">
+                    <source srcset="/images/logo-48.webp" media="(max-width: 480px)">
+                    <source srcset="/images/logo-96.webp" media="(max-width: 768px)">
+                    <source srcset="/images/logo-144.webp" media="(max-width: 1024px)">
+                    <img class="logo-icon" src="/images/logo-web.webp" alt="" aria-hidden="true" width="48" height="48" loading="lazy">
                 </picture>
                 <span class="logo-text">Pure Clean Cheshire</span>
             </a>
@@ -33,11 +33,11 @@
                 </button>
                 <ul id="nav-menu" class="nav-menu">
                     <li><a href="/index.html" class="nav-link">Home</a></li>
-                    <li><a href="services.html" class="nav-link">Services</a></li>
-                    <li><a href="pricing.html" class="nav-link active" aria-current="page">Pricing</a></li>
-                    <li><a href="about.html" class="nav-link">About Us</a></li>
-                    <li><a href="areas.html" class="nav-link">Areas Covered</a></li>
-                    <li><a href="contact.html" class="nav-link nav-cta">Get a Quote</a></li>
+                    <li><a href="/services.html" class="nav-link">Services</a></li>
+                    <li><a href="/pricing.html" class="nav-link active" aria-current="page">Pricing</a></li>
+                    <li><a href="/about.html" class="nav-link">About Us</a></li>
+                    <li><a href="/areas.html" class="nav-link">Areas Covered</a></li>
+                    <li><a href="/contact.html" class="nav-link nav-cta">Get a Quote</a></li>
                 </ul>
             </nav>
             
@@ -53,6 +53,31 @@
     </header>
 
     <main id="main-content" role="main">
+                <section class="inner-trust-bar" aria-label="Trust indicators">
+            <div class="container">
+                <div class="inner-trust-item">
+                    <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    <span>£5M Public Liability</span>
+                </div>
+                <div class="inner-trust-item">
+                    <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    <span>7-Day Guarantee</span>
+                </div>
+                <div class="inner-trust-item">
+                    <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                    <span>DBS Checked</span>
+                </div>
+                <div class="inner-trust-item">
+                    <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    <span>Eco-Friendly Products</span>
+                </div>
+                <div class="inner-trust-item">
+                    <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                    <span>Local Frodsham Team</span>
+                </div>
+            </div>
+        </section>
+
         <section class="service-hero" aria-labelledby="pricing-hero-heading">
             <div class="container">
                 <h1 id="pricing-hero-heading">Transparent, Fixed Pricing</h1>
@@ -63,7 +88,7 @@
             </div>
         </section>
 
-        <section class="pricing-page" aria-labelledby="pricing-table-heading">
+        <section class="pricing-page page-section" aria-labelledby="pricing-table-heading">
             <div class="container">
                 <header class="section-header">
                     <h2 id="pricing-table-heading" class="section-title">Core Service Prices</h2>
@@ -149,7 +174,7 @@
             </div>
         </section>
 
-        <section class="pricing-page" aria-labelledby="addons-heading" style="background: var(--color-50);">
+        <section class="pricing-page page-section" aria-labelledby="addons-heading" >
             <div class="container">
                 <header class="section-header">
                     <h2 id="addons-heading" class="section-title">Specialist Add-Ons</h2>
@@ -239,7 +264,7 @@
             </div>
         </section>
 
-        <section class="pricing-page" aria-labelledby="cards-heading">
+        <section class="pricing-page page-section" aria-labelledby="cards-heading">
             <div class="container">
                 <header class="section-header">
                     <h2 id="cards-heading" class="section-title">Popular Packages</h2>
@@ -260,7 +285,7 @@
                             <li>Photo proof & signed checklist</li>
                             <li>7-day guarantee</li>
                         </ul>
-                        <a href="contact.html" class="btn btn-primary pricing-card-cta">Book Move-Out Package</a>
+                        <a href="/contact.html" class="btn btn-primary pricing-card-cta">Book Move-Out Package</a>
                     </article>
 
                     <article class="pricing-card featured">
@@ -276,7 +301,7 @@
                             <li>Internal windows throughout</li>
                             <li>Sanitisation fogging</li>
                         </ul>
-                        <a href="contact.html" class="btn btn-accent pricing-card-cta">Book Total Refresh</a>
+                        <a href="/contact.html" class="btn btn-accent pricing-card-cta">Book Total Refresh</a>
                     </article>
 
                     <article class="pricing-card">
@@ -292,7 +317,7 @@
                             <li>Photo report to your phone</li>
                             <li>Key holding available</li>
                         </ul>
-                        <a href="contact.html" class="btn btn-primary pricing-card-cta">Set Up Airbnb Cleaning</a>
+                        <a href="/contact.html" class="btn btn-primary pricing-card-cta">Set Up Airbnb Cleaning</a>
                     </article>
 
                     <article class="pricing-card">
@@ -308,13 +333,13 @@
                             <li>Agent liaison & key collection</li>
                             <li>Priority re-clean if needed</li>
                         </ul>
-                        <a href="contact.html" class="btn btn-primary pricing-card-cta">Book Landlord Package</a>
+                        <a href="/contact.html" class="btn btn-primary pricing-card-cta">Book Landlord Package</a>
                     </article>
                 </div>
             </div>
         </section>
 
-        <section class="section" aria-labelledby="pricing-factors-heading" style="background: var(--color-primary-50);">
+        <section class="section" aria-labelledby="pricing-factors-heading">
             <div class="container">
                 <header class="section-header">
                     <h2 id="pricing-factors-heading" class="section-title">What Affects Your Final Price</h2>
@@ -355,7 +380,7 @@
                 <div class="cta-content">
                     <h2 id="cta-heading" class="cta-title">Get Your Exact Price in 2 Minutes</h2>
                     <p class="cta-text">Tell us your property details and we'll send a fixed quote within 2 hours. No obligation, no follow-up calls.</p>
-                    <a href="contact.html" class="btn btn-primary btn-lg">Get My Free Quote</a>
+                    <a href="/contact.html" class="btn btn-primary btn-lg">Get My Free Quote</a>
                 </div>
             </div>
         </section>
@@ -367,10 +392,10 @@
                 <div class="footer-brand">
                     <a href="/index.html" class="logo" aria-label="Pure Clean Cheshire - Home">
                         <picture>
-                            <source srcset="../images/logo-48.webp" media="(max-width: 480px)">
-                            <source srcset="../images/logo-96.webp" media="(max-width: 768px)">
-                            <source srcset="../images/logo-144.webp" media="(max-width: 1024px)">
-                            <img class="logo-icon" src="../images/logo-web.webp" alt="" aria-hidden="true" width="48" height="48" loading="lazy">
+                            <source srcset="/images/logo-48.webp" media="(max-width: 480px)">
+                            <source srcset="/images/logo-96.webp" media="(max-width: 768px)">
+                            <source srcset="/images/logo-144.webp" media="(max-width: 1024px)">
+                            <img class="logo-icon" src="/images/logo-web.webp" alt="" aria-hidden="true" width="48" height="48" loading="lazy">
                         </picture>
                         <span class="logo-text">Pure Clean Cheshire</span>
                     </a>
@@ -398,11 +423,11 @@
                     <div class="footer-column">
                         <h3>Information</h3>
                         <ul>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="pricing.html">Pricing Guide</a></li>
-                            <li><a href="areas.html">Areas We Cover</a></li>
+                            <li><a href="/about.html">About Us</a></li>
+                            <li><a href="/pricing.html">Pricing Guide</a></li>
+                            <li><a href="/areas.html">Areas We Cover</a></li>
                             <li><a href="contact.html#faq">FAQs</a></li>
-                            <li><a href="contact.html">Get a Quote</a></li>
+                            <li><a href="/contact.html">Get a Quote</a></li>
                         </ul>
                     </div>
                     <div class="footer-column">

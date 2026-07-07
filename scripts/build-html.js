@@ -56,6 +56,12 @@ async function processPage(page) {
   ).replace(
     'href="../css/main.css"',
     'href="../css/main.min.css"'
+  ).replace(
+    'href="/css/main.css"',
+    'href="/css/main.min.css"'
+  ).replace(
+    'href="/css/main.min.css"',
+    'href="/css/main.min.css"'
   );
   
   // Update JS reference to minified version

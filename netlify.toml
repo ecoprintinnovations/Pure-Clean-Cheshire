@@ -109,6 +109,12 @@
 
 # 404 Page
 [[redirects]]
+  from = "/pages/*"
+  to = "/:splat"
+  status = 200
+
+# Catch-all
+[[redirects]]
   from = "/*"
   to = "/404.html"
   status = 404
